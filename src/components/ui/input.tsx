@@ -1,8 +1,9 @@
 
 import * as React from "react"
-
 import { cn } from "@/lib/utils"
 
+// Create a new interface that explicitly omits the prefix attribute
+// from HTMLInputElement's attributes to avoid the conflict
 export interface InputProps
   extends Omit<React.InputHTMLAttributes<HTMLInputElement>, "prefix"> {
   prefix?: React.ReactElement;
